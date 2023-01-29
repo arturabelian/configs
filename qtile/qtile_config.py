@@ -83,6 +83,7 @@ layouts = [
     # layout.TreeTab(),
     # layout.VerticalTile(),
     # layout.Zoomy(),
+    layout.MonadThreeCol(margin=8, border_width=2),
 ]
 
 
