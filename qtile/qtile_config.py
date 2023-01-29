@@ -101,7 +101,7 @@ screens = [
     Screen(
 
 # ADD WALLPAPER
-        wallpaper='~/.config/qtile/wallapaper/wallpaper.jpg',
+        wallpaper='~/.config/qtile/wallpaper/wallpaper.jpg',
         wallpaper_mode='stretch',
         
         top=bar.Bar(
