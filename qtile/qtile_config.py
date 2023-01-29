@@ -8,7 +8,9 @@ from libqtile.utils import guess_terminal
 mod = "mod4"
 terminal = guess_terminal()
 
-
+#######
+# KEY #
+#######
 
 keys = [
     # Switch between windows
@@ -48,6 +50,9 @@ keys = [
 ]
 
 
+#########
+# GROUP #
+#########
 
 groups = [Group(i) for i in "123456789"]
 
@@ -64,7 +69,9 @@ for i in groups:
             #     desc="move focused window to group {}".format(i.name)),
         ])
 
-
+##########
+# LAYOUT #
+##########
 
 layouts = [
     layout.Columns(border_focus_stack=["#d75f5f", "#8f3d3d"], border_width=4), layout.Max(),
@@ -86,16 +93,18 @@ layouts = [
 widget_defaults = dict(font="sans", fontsize=12, padding=3,)
 extension_defaults = widget_defaults.copy()
 
-
+##########
+# SCREEN #
+##########
 
 screens = [
     Screen(
 
 # ADD WALLPAPER
-        wallpaper='~/.config/qtile/background.png',
+        wallpaper='~/.config/qtile/wallapaper/wallpaper.jpg',
         wallpaper_mode='stretch',
         
-        bottom=bar.Bar(
+        top=bar.Bar(
             [
                 widget.CurrentLayout(),
                 widget.GroupBox(),
@@ -117,6 +126,9 @@ screens = [
 ]
 
 
+#########
+# MOUSE #
+#########
 
 # Drag floating layouts.
 mouse = [
